@@ -56,17 +56,17 @@
         <repository>
             <id>releases</id>
             <name>public releases</name>
-            <url>http://nexus2.broadleafcommerce.org/nexus/content/repositories/public/</url>
+            <url>https://nexus2.broadleafcommerce.org/nexus/content/repositories/public/</url>
         </repository>
         <repository>
             <id>snapshots</id>
             <name>public snapshots</name>
-            <url>http://nexus2.broadleafcommerce.org/nexus/content/repositories/snapshots/</url>
+            <url>https://nexus2.broadleafcommerce.org/nexus/content/repositories/snapshots/</url>
         </repository>
         <repository>
             <id>third-party-private</id>
             <name>third party private</name>
-            <url>http://nexus2.broadleafcommerce.org/nexus/content/repositories/thirdparty/</url>
+            <url>https://nexus2.broadleafcommerce.org/nexus/content/repositories/thirdparty/</url>
         </repository>
     </repositories>
     <distributionManagement>
