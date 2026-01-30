@@ -1,74 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
+    
     <parent>
-        <groupId>org.broadleafcommerce</groupId>
-        <artifactId>broadleaf-module-parent</artifactId>
-        <version>1.0.14-GA</version>
+       <groupId>org.broadleafcommerce</groupId>
+       <artifactId>broadleaf-module-parent</artifactId>
+       <version>1.0.16-GA</version>
     </parent>
 
-    <groupId>org.broadleafcommerce</groupId>
-    <artifactId>broadleaf-google-storage</artifactId>
     <name>BroadleafCommerce Google Storage</name>
-    <description>Broadleaf Google Storage Integration</description>
+    <description>Integration of Google Storage with Broadleaf Framework</description>
+    <groupId>com.broadleafcommerce</groupId>
+    <artifactId>broadleaf-google-storage</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <url>https://www.broadleafcommerce.com</url>
 
     <properties>
         <project.uri>${project.baseUri}</project.uri>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <blc.version>5.1.5-GA</blc.version>
+        <blc.version>5.1.25-GA</blc.version>
         <google.cloud.bom.version>26.39.0</google.cloud.bom.version>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>enterprise-releases</id>
+            <name>enterprise-releases</name>
+            <url>https://nexus2.broadleafcommerce.org/nexus/content/groups/enterprise-releases/</url>
+        </repository>
+        <repository>
+            <id>enterprise-snapshots</id>
+            <name>enterprise-snapshots</name>
+            <url>https://nexus2.broadleafcommerce.org/nexus/content/groups/enterprise-snapshots/</url>
+        </repository>
+    </repositories>
     <scm>
         <connection>scm:git:git@github.com:BroadleafCommerce/blc-google-storage.git</connection>
         <developerConnection>scm:git:git@github.com:BroadleafCommerce/blc-google-storage.git</developerConnection>
         <url>https://github.com/BroadleafCommerce/blc-google-storage</url>
         <tag>HEAD</tag>
     </scm>
-
-    <url>http://www.broadleafcommerce.com</url>
     <licenses>
-        <license>
-            <name>Broadleaf Fair Use 1.0</name>
-            <url>http://license.broadleafcommerce.org/fair_use_license-1.0.txt</url>
-            <distribution>repo</distribution>
-            <comments>Fair Use Community License</comments>
-        </license>
         <license>
             <name>Broadleaf End User License Agreement 1.1</name>
             <url>http://license.broadleafcommerce.org/commercial_license-1.1.txt</url>
             <distribution>repo</distribution>
-            <comments>Commercial License Applicable When Bounds of Fair Use License Are Exceeded</comments>
+            <comments>Broadleaf Commerce Commercial License</comments>
         </license>
     </licenses>
     <developers>
         <developer>
-            <id>architect</id>
-            <email>architect@broadleafcommerce.org</email>
+            <id>blcteam</id>
+            <name>Broadleaf Commerce Team</name>
+            <email>info@broadleafcommerce.com</email>
             <organization>Broadleaf Commerce</organization>
-            <organizationUrl>http://www.broadleafcommerce.org</organizationUrl>
+            <organizationUrl>https://www.broadleafcommerce.com</organizationUrl>
             <timezone>-6</timezone>
         </developer>
     </developers>
-    <repositories>
-        <repository>
-            <id>releases</id>
-            <name>public releases</name>
-            <url>https://nexus2.broadleafcommerce.org/nexus/content/repositories/public/</url>
-        </repository>
-        <repository>
-            <id>snapshots</id>
-            <name>public snapshots</name>
-            <url>https://nexus2.broadleafcommerce.org/nexus/content/repositories/snapshots/</url>
-        </repository>
-        <repository>
-            <id>third-party-private</id>
-            <name>third party private</name>
-            <url>https://nexus2.broadleafcommerce.org/nexus/content/repositories/thirdparty/</url>
-        </repository>
-    </repositories>
     <distributionManagement>
         <snapshotRepository>
             <id>snapshots</id>
@@ -107,7 +96,7 @@
             <groupId>org.broadleafcommerce</groupId>
             <artifactId>broadleaf-third-party-integration-config</artifactId>
             <version>default</version>
-            <scope>test</scope>
+            <scope>compile</scope>
             <type>jar</type>
             <optional>true</optional>
         </dependency>
