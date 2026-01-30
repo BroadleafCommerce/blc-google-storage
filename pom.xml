@@ -12,7 +12,7 @@
     <description>Integration of Google Storage with Broadleaf Framework</description>
     <groupId>com.broadleafcommerce</groupId>
     <artifactId>broadleaf-google-storage</artifactId>
-    <version>1.0.0-M1</version>
+    <version>1.0.0-SNAPSHOT</version>
     <url>https://www.broadleafcommerce.com</url>
 
     <properties>
@@ -38,7 +38,7 @@
         <connection>scm:git:git@github.com:BroadleafCommerce/blc-google-storage.git</connection>
         <developerConnection>scm:git:git@github.com:BroadleafCommerce/blc-google-storage.git</developerConnection>
         <url>https://github.com/BroadleafCommerce/blc-google-storage</url>
-        <tag>broadleaf-google-storage-1.0.0-M1</tag>
+        <tag>HEAD</tag>
     </scm>
     <licenses>
         <license>
